@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "obs-hba1c",
+  "identifier": [
+    {
+      "system": "urn:fhir-modelling:resource-key",
+      "value": "obs-hba1c"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "4548-4",
+        "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+      }
+    ],
+    "text": "HbA1c"
+  },
+  "subject": {
+    "reference": "Patient/rajesh-sharma",
+    "display": "Rajesh Sharma"
+  },
+  "encounter": {
+    "reference": "Encounter/enc-001-opd"
+  },
+  "effectiveDateTime": "2026-03-13T10:00:00+05:30",
+  "valueQuantity": {
+    "value": 9.2,
+    "unit": "%",
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  }
+}

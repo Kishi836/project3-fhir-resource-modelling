@@ -1,0 +1,65 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "med-amlodipine",
+  "identifier": [
+    {
+      "system": "urn:fhir-modelling:resource-key",
+      "value": "med-amlodipine"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "17767",
+        "display": "Amlodipine"
+      }
+    ],
+    "text": "Amlodipine 5 mg oral tablet"
+  },
+  "subject": {
+    "reference": "Patient/rajesh-sharma",
+    "display": "Rajesh Sharma"
+  },
+  "encounter": {
+    "reference": "Encounter/enc-001-opd"
+  },
+  "authoredOn": "2026-03-13",
+  "requester": {
+    "reference": "Practitioner/dr-gupta",
+    "display": "Dr. Anil Gupta"
+  },
+  "dosageInstruction": [
+    {
+      "text": "5 mg orally once daily (OD) in the morning",
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "26643006",
+            "display": "Oral route"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 5,
+            "unit": "mg",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+          }
+        }
+      ]
+    }
+  ]
+}

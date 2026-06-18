@@ -1,0 +1,13 @@
+{
+  "resourceType": "OperationOutcome",
+  "issue": [
+    {
+      "severity": "error",
+      "code": "required",
+      "diagnostics": "Observation.status: minimum required = 1, but only found 0",
+      "expression": [
+        "Observation.status"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "obs-bp-dia-2",
+  "identifier": [
+    {
+      "system": "urn:fhir-modelling:resource-key",
+      "value": "obs-bp-dia-2"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8462-4",
+        "display": "Diastolic blood pressure"
+      }
+    ],
+    "text": "Diastolic Blood Pressure"
+  },
+  "subject": {
+    "reference": "Patient/rajesh-sharma",
+    "display": "Rajesh Sharma"
+  },
+  "encounter": {
+    "reference": "Encounter/enc-002-followup"
+  },
+  "effectiveDateTime": "2026-04-24T11:05:00+05:30",
+  "valueQuantity": {
+    "value": 82,
+    "unit": "mmHg",
+    "system": "http://unitsofmeasure.org",
+    "code": "mm[Hg]"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "qr-diabetes-intake",
+  "identifier": {
+    "system": "urn:fhir-modelling:resource-key",
+    "value": "qr-diabetes-intake"
+  },
+  "questionnaire": "http://aiims.example.org/Questionnaire/diabetes-intake",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/rajesh-sharma",
+    "display": "Rajesh Sharma"
+  },
+  "encounter": {
+    "reference": "Encounter/enc-001-opd"
+  },
+  "authored": "2026-03-13T09:40:00+05:30",
+  "author": {
+    "reference": "Practitioner/dr-gupta",
+    "display": "Dr. Anil Gupta"
+  },
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Presenting complaints",
+      "answer": [
+        {
+          "valueString": "Polyuria and fatigue for several weeks"
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Duration of symptoms (weeks)",
+      "answer": [
+        {
+          "valueInteger": 8
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Family history of diabetes?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Smoking status",
+      "answer": [
+        {
+          "valueString": "Former"
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "Known drug allergies",
+      "answer": [
+        {
+          "valueString": "Sulfonamide antibiotics"
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "text": "Current body weight (kg)",
+      "answer": [
+        {
+          "valueDecimal": 82.5
+        }
+      ]
+    }
+  ]
+}
