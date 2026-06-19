@@ -1,0 +1,64 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "diabetes-intake",
+  "identifier": [
+    {
+      "system": "urn:fhir-modelling:resource-key",
+      "value": "diabetes-intake"
+    }
+  ],
+  "url": "http://aiims.example.org/Questionnaire/diabetes-intake",
+  "version": "1.0",
+  "name": "DiabetesIntakeForm",
+  "title": "Diabetes Intake Questionnaire",
+  "status": "active",
+  "subjectType": [
+    "Patient"
+  ],
+  "date": "2026-03-13",
+  "publisher": "AIIMS Endocrinology",
+  "description": "Structured intake form completed at the first diabetes OPD visit.",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Presenting complaints",
+      "type": "string"
+    },
+    {
+      "linkId": "2",
+      "text": "Duration of symptoms (weeks)",
+      "type": "integer"
+    },
+    {
+      "linkId": "3",
+      "text": "Family history of diabetes?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "4",
+      "text": "Smoking status",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueString": "Never"
+        },
+        {
+          "valueString": "Former"
+        },
+        {
+          "valueString": "Current"
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "Known drug allergies",
+      "type": "string"
+    },
+    {
+      "linkId": "6",
+      "text": "Current body weight (kg)",
+      "type": "decimal"
+    }
+  ]
+}

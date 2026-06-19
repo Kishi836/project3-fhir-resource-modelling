@@ -1,0 +1,65 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "med-metformin",
+  "identifier": [
+    {
+      "system": "urn:fhir-modelling:resource-key",
+      "value": "med-metformin"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "6809",
+        "display": "Metformin"
+      }
+    ],
+    "text": "Metformin 500 mg oral tablet"
+  },
+  "subject": {
+    "reference": "Patient/rajesh-sharma",
+    "display": "Rajesh Sharma"
+  },
+  "encounter": {
+    "reference": "Encounter/enc-001-opd"
+  },
+  "authoredOn": "2026-03-13",
+  "requester": {
+    "reference": "Practitioner/dr-gupta",
+    "display": "Dr. Anil Gupta"
+  },
+  "dosageInstruction": [
+    {
+      "text": "500 mg orally twice daily (BD) after meals",
+      "timing": {
+        "repeat": {
+          "frequency": 2,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "26643006",
+            "display": "Oral route"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 500,
+            "unit": "mg",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+          }
+        }
+      ]
+    }
+  ]
+}

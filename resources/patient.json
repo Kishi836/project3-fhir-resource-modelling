@@ -1,0 +1,45 @@
+{
+  "resourceType": "Patient",
+  "id": "rajesh-sharma",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://abdm.gov.in/ABHA",
+      "value": "1234-5678-9012-3456"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "text": "Rajesh Sharma",
+      "family": "Sharma",
+      "given": [
+        "Rajesh"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+91-9845012345",
+      "use": "mobile"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1974-04-12",
+  "address": [
+    {
+      "use": "home",
+      "type": "physical",
+      "line": [
+        "No. 14, 4th Cross, Jayanagar"
+      ],
+      "city": "Bengaluru",
+      "district": "Bengaluru Urban",
+      "state": "Karnataka",
+      "postalCode": "560011",
+      "country": "IN"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "med-insulin",
+  "identifier": [
+    {
+      "system": "urn:fhir-modelling:resource-key",
+      "value": "med-insulin"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "311036",
+        "display": "Regular insulin, human 100 unit/mL injectable solution"
+      }
+    ],
+    "text": "Regular Insulin (Human), subcutaneous"
+  },
+  "subject": {
+    "reference": "Patient/rajesh-sharma",
+    "display": "Rajesh Sharma"
+  },
+  "encounter": {
+    "reference": "Encounter/enc-003-inpatient"
+  },
+  "authoredOn": "2026-05-30",
+  "requester": {
+    "reference": "Practitioner/dr-gupta",
+    "display": "Dr. Anil Gupta"
+  },
+  "dosageInstruction": [
+    {
+      "text": "Regular insulin 10 units subcutaneously three times daily (TDS) before meals, titrated per sliding scale",
+      "timing": {
+        "repeat": {
+          "frequency": 3,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "34206005",
+            "display": "Subcutaneous route"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 10,
+            "unit": "U",
+            "system": "http://unitsofmeasure.org",
+            "code": "U"
+          }
+        }
+      ]
+    }
+  ]
+}

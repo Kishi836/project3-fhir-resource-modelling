@@ -1,0 +1,58 @@
+{
+  "resourceType": "Encounter",
+  "id": "enc-001-opd",
+  "identifier": [
+    {
+      "system": "urn:fhir-modelling:resource-key",
+      "value": "enc-001-opd"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "AMB",
+    "display": "ambulatory"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "185349003",
+          "display": "Encounter for check up"
+        }
+      ],
+      "text": "Initial OPD visit - Endocrinology"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/rajesh-sharma",
+    "display": "Rajesh Sharma"
+  },
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "ATND",
+              "display": "attender"
+            }
+          ]
+        }
+      ],
+      "individual": {
+        "reference": "Practitioner/dr-gupta",
+        "display": "Dr. Anil Gupta"
+      }
+    }
+  ],
+  "period": {
+    "start": "2026-03-13T09:30:00+05:30",
+    "end": "2026-03-13T10:15:00+05:30"
+  },
+  "serviceProvider": {
+    "display": "AIIMS Endocrinology OPD"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "obs-bg-admission",
+  "identifier": [
+    {
+      "system": "urn:fhir-modelling:resource-key",
+      "value": "obs-bg-admission"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "2339-0",
+        "display": "Glucose [Mass/volume] in Blood"
+      }
+    ],
+    "text": "Random Blood Glucose (on admission)"
+  },
+  "subject": {
+    "reference": "Patient/rajesh-sharma",
+    "display": "Rajesh Sharma"
+  },
+  "encounter": {
+    "reference": "Encounter/enc-003-inpatient"
+  },
+  "effectiveDateTime": "2026-05-30T22:00:00+05:30",
+  "valueQuantity": {
+    "value": 380,
+    "unit": "mg/dL",
+    "system": "http://unitsofmeasure.org",
+    "code": "mg/dL"
+  }
+}

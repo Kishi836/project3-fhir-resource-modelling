@@ -1,0 +1,90 @@
+{
+  "resourceType": "Encounter",
+  "id": "enc-003-inpatient",
+  "identifier": [
+    {
+      "system": "urn:fhir-modelling:resource-key",
+      "value": "enc-003-inpatient"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "IMP",
+    "display": "inpatient encounter"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "32485007",
+          "display": "Hospital admission"
+        }
+      ],
+      "text": "Inpatient admission - acute hyperglycaemia"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/rajesh-sharma",
+    "display": "Rajesh Sharma"
+  },
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "ATND",
+              "display": "attender"
+            }
+          ]
+        }
+      ],
+      "individual": {
+        "reference": "Practitioner/dr-gupta",
+        "display": "Dr. Anil Gupta"
+      }
+    }
+  ],
+  "period": {
+    "start": "2026-05-30T22:10:00+05:30",
+    "end": "2026-06-01T11:00:00+05:30"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "R73.9",
+          "display": "Hyperglycaemia, unspecified"
+        }
+      ],
+      "text": "Acute hyperglycaemia (blood glucose 380 mg/dL)"
+    }
+  ],
+  "hospitalization": {
+    "admitSource": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/admit-source",
+          "code": "emd",
+          "display": "From accident/emergency department"
+        }
+      ]
+    },
+    "dischargeDisposition": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+          "code": "home",
+          "display": "Home"
+        }
+      ]
+    }
+  },
+  "serviceProvider": {
+    "display": "AIIMS - Department of Medicine (Inpatient)"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "resourceType": "Provenance",
+  "id": "prov-001-opd",
+  "meta": {
+    "tag": [
+      {
+        "system": "urn:fhir-modelling:resource-key",
+        "code": "prov-001-opd"
+      }
+    ]
+  },
+  "target": [
+    {
+      "reference": "Encounter/enc-001-opd"
+    },
+    {
+      "reference": "Condition/cond-diabetes"
+    },
+    {
+      "reference": "Condition/cond-hypertension"
+    },
+    {
+      "reference": "Observation/obs-hba1c"
+    },
+    {
+      "reference": "Observation/obs-fbg-1"
+    },
+    {
+      "reference": "Observation/obs-bp-sys-1"
+    },
+    {
+      "reference": "Observation/obs-bp-dia-1"
+    },
+    {
+      "reference": "Observation/obs-creatinine"
+    },
+    {
+      "reference": "MedicationRequest/med-metformin"
+    },
+    {
+      "reference": "MedicationRequest/med-amlodipine"
+    }
+  ],
+  "recorded": "2026-03-13T10:20:00+05:30",
+  "activity": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+        "code": "CREATE",
+        "display": "create"
+      }
+    ],
+    "text": "Initial OPD consultation records created"
+  },
+  "agent": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+            "code": "author",
+            "display": "Author"
+          }
+        ]
+      },
+      "who": {
+        "reference": "Practitioner/dr-gupta",
+        "display": "Dr. Anil Gupta"
+      }
+    }
+  ]
+}
